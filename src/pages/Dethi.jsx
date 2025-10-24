@@ -1,11 +1,9 @@
 import React from "react";
-import "../styles/users/dethi.css";
-import { FaFileAlt } from "react-icons/fa";
-import { FaClock } from "react-icons/fa";
-import { GrScheduleNew } from "react-icons/gr";
+import { Box, Typography } from "@mui/material";
 
-const Dethi = () => {
+function DeThi() {
   return (
+
     <div className="container">
       <div className="row">
         <div className="col-xl-12">
@@ -49,7 +47,8 @@ const Dethi = () => {
         </div>
       </div>
     </div>
-  );
-};
 
-export default Dethi;
+  );
+}
+
+export default DeThi;
