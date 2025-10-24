@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import "@/styles/Header.css";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 
 const DEFAULT_HEADER_DATA = {
@@ -39,7 +38,7 @@ const Header = ({
           </Box>
           <Box className="header-right-user">
             <Box className="header-icon-img"></Box>
-            <ExpandMoreIcon className="sidebar-icon" />
+            <span className="material-symbols-outlined sidebar-icon">expand_more</span>
           </Box>
         </Box>
       </Box>
