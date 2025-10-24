@@ -1,14 +1,12 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-function Dashboard() {
-
+function DeThi() {
   return (
     <Box >
-      <Typography variant="h4">DashboardPage</Typography>
+      <Typography variant="h4">Đề thi Page</Typography>
     </Box>
   );
-
 }
 
-export default Dashboard;
+export default DeThi;
