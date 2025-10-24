@@ -5,8 +5,6 @@ import Sidebar from "@/components/Sidebar";
 import { Outlet } from "react-router-dom";
 import "@/styles/AdminLayout.css";
 
-const drawerWidth = 220;
-
 function AdminLayout() {
   return (
     <Box className="admin-layout">

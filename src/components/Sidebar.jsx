@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Box, Typography, Collapse } from "@mui/material";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "@/styles/Sidebar.css";
 
 function Sidebar() {
+  const location = useLocation();
   const [collapsed, setCollapsed] = useState(false);
   const [openKhoaHoc, setOpenKhoaHoc] = useState(false);
   const [openLopCuaToi, setOpenLopCuaToi] = useState(false);
@@ -34,16 +33,18 @@ function Sidebar() {
             <img src="src/assets/images/logo.png" alt="Logo" />
             <Typography variant="h6">Foxgo</Typography>
           </Box>
-          <ChevronLeftIcon
-            className={`sidebar-icon ${collapsed ? "rotate" : ""}`}
+          <span
+            className={`material-symbols-outlined sidebar-icon ${collapsed ? "rotate" : ""}`}
             onClick={() => setCollapsed(!collapsed)}
-          />
+          >
+            chevron_left
+          </span>
         </Box>
       </Box>
 
       <Box className="sidebar">
         <Box className="sidebar-menu">
-          <Box className="sidebar-menu-item">
+          <Box className={`sidebar-menu-item ${location.pathname === '/dashboard' ? 'active' : ''}`}>
             <img src="src/assets/images/trangchu.png" alt="" />
             <Link to="/dashboard" className="sidebar-link">
               <Typography variant="body1">Trang chủ</Typography>
@@ -65,7 +66,7 @@ function Sidebar() {
           </Box>
 
           <Box className="sidebar-form-menu">
-            <Box className="sidebar-menu-item">
+            <Box className={`sidebar-menu-item ${location.pathname === '/dethi' ? 'active' : ''}`}>
               <img src="src/assets/images/dethi.png" alt="" />
               <Link to="/dethi" className="sidebar-link">
                 <Typography variant="body1">Đề thi</Typography>
@@ -87,9 +88,11 @@ function Sidebar() {
             >
               <img src="src/assets/images/khoahoc.png" alt="" />
               <Typography variant="body1">Khóa học</Typography>
-              <ExpandMoreIcon
-                className={`sidebar-icon ${openKhoaHoc ? "rotate" : ""}`}
-              />
+              <span
+                className={`material-symbols-outlined sidebar-icon ${openKhoaHoc ? "rotate" : ""}`}
+              >
+                expand_more
+              </span>
             </Box>
 
             <Collapse in={openKhoaHoc} timeout="auto" unmountOnExit>
@@ -105,11 +108,13 @@ function Sidebar() {
                           onClick={() => setOpenNgoaiNgu(!openNgoaiNgu)}
                         >
                           <Typography variant="body2">{item.label}</Typography>
-                          <ExpandMoreIcon
-                            className={`sidebar-icon ${
+                          <span
+                            className={`material-symbols-outlined sidebar-icon ${
                               openNgoaiNgu ? "rotate" : ""
                             }`}
-                          />
+                          >
+                            expand_more
+                          </span>
                         </Box>
 
                         <Collapse
@@ -140,9 +145,11 @@ function Sidebar() {
             >
               <img src="src/assets/images/lopcuatoi.png" alt="" />
               <Typography variant="body1">Lớp của tôi</Typography>
-              <ExpandMoreIcon
-                className={`sidebar-icon ${openLopCuaToi ? "rotate" : ""}`}
-              />
+              <span
+                className={`material-symbols-outlined sidebar-icon ${openLopCuaToi ? "rotate" : ""}`}
+              >
+                expand_more
+              </span>
             </Box>
 
             <Collapse in={openLopCuaToi} timeout="auto" unmountOnExit>
@@ -162,9 +169,11 @@ function Sidebar() {
             >
               <img src="src/assets/images/xemthem.png" alt="" />
               <Typography variant="body1">Xem thêm</Typography>
-              <ExpandMoreIcon
-                className={`sidebar-icon ${openXemThem ? "rotate" : ""}`}
-              />
+              <span
+                className={`material-symbols-outlined sidebar-icon ${openXemThem ? "rotate" : ""}`}
+              >
+                expand_more
+              </span>
             </Box>
 
             <Collapse in={openXemThem} timeout="auto" unmountOnExit>
@@ -190,9 +199,7 @@ function Sidebar() {
           </Box>
           <Box className="sidebar-menu-item">
             <img src="src/assets/images/dangxuat.png" alt="" />
-            <Link to="/login" className="sidebar-link">
               <Typography variant="body1">Đăng xuất</Typography>
-            </Link>
           </Box>
         </Box>
       </Box>
