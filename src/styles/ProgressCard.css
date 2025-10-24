@@ -1,0 +1,341 @@
+.rank-container {
+    width: 364px;
+    min-height: 336px;
+    height: auto;
+    opacity: 1;
+    gap: 24px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    transition: height 0.3s ease;
+}
+
+.rank-header{
+    width: 324px;
+    height: 96px;
+    opacity: 1;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rank-divider{
+    width: 324px;
+    height: 0px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.rank-header-rank{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 324px;
+    height: 96px;
+}
+.rank-header-rank h5{
+    width: 202px;
+    height: 28px;
+    opacity: 1;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.rank-header-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 28px;
+    align-items: center;
+
+}
+.rank-notification img{
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+.rank-notification {
+    width: 324px;
+    height: 56px;
+    opacity: 1;
+    gap: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+
+}
+.rank-notification p{
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #AFAFAF;
+
+
+}
+.rank-header-content h5{
+    width: 202px;
+    height: 28px;
+    opacity: 1;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.rank-header-content h6{
+    width: 74px;
+    height: 16px;
+    opacity: 1;
+    text-align: center;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FA9300;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rank-header-content h6:hover{
+    color: #E67E00;
+    transform: scale(1.05);
+}
+
+
+.rank-content{
+   width: 324px;
+    height: 228px;
+    opacity: 1;
+    gap: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rank-item{
+    width: 100px;
+    height: 200px;
+    opacity: 1;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.rank-item-header{
+    width: 100px;
+    height: 92px;
+    opacity: 1;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.rank-item-header p{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    width: 100px;
+    height: 20px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rank-item-header-user{
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #FA9300;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.rank-item-header-user-info img{
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+
+}
+.rank-item-header-user-info{
+    width: 55px;
+    height: 24px;
+    opacity: 1;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rank-tanggiam {
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.custom-progress-bar {
+    width: 100%;
+    background: linear-gradient(180deg, #FA9300 0%, #E67E00 100%);
+    border-radius: 6px;
+    min-height: 2px;
+}
+
+
+.rank-task{
+    width: 324px;
+    min-height: 160px;
+    height: auto;
+    opacity: 1;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.rank-task-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    min-height: 120px;
+    height: auto;
+    opacity: 1;
+    gap: 16px;
+    transition: height 0.3s ease;
+}
+
+.rank-task-item{
+    width: 324px;
+    height: 52px;
+    opacity: 1;
+    gap: 12px;
+    display:flex;
+    align-items: center;
+
+}
+
+.rank-task-item img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.rank-task-info{
+    width: 272;
+    height: 52px;
+    opacity: 1;
+    gap: 8px;
+
+}
+.rank-task-info p{
+    width: 161px;
+    height: 24px;
+    opacity: 1;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #5E5E5E;
+}
+
+.rank-task-progress{
+    width: 272px;
+    height: 20;
+    opacity: 1;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rank-task-progress p{ 
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    width: 42px;
+    height: 20px;
+    opacity: 1;
+
+
+}
+.rank-task-progress .linear {
+    width: 100%;
+    height: 14px;
+    opacity: 1;
+    padding-right: 56.19px;
+    border-radius: 7px;
+}
+
+
+.rank-task-empty {
+    width: 324px;
+    height: auto;
+    min-height: 80px;
+    opacity: 1;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rank-empty-message {
+    width: 324px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px dashed #dee2e6;
+}
+
+.rank-empty-message .empty-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6c757d;
+    text-align: center;
+}
+
+.rank-container:has(.rank-task-empty) {
+    min-height: 200px;
+}
