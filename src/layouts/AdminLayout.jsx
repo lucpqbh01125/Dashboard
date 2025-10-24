@@ -5,6 +5,7 @@ import Sidebar from "@/components/Sidebar";
 import { Outlet } from "react-router-dom";
 import "@/styles/AdminLayout.css";
 
+
 function AdminLayout() {
   return (
     <Box className="admin-layout">
@@ -18,5 +19,4 @@ function AdminLayout() {
     </Box>
   );
 }
-
 export default AdminLayout;
