@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AdminLayout from "@/layouts/AdminLayout";
 import Dashboard from "@/pages/Dashboard";
-import Dethi from "@/pages/DeThi";
+import DeThi from "@/pages/DeThi";
 
 
 const router = createBrowserRouter([
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Dashboard /> },
       { path: "dashboard", element: <Dashboard /> },
-      { path: "dethi", element: <Dethi/> },
+      { path: "dethi", element: <DeThi/> },
     ],
   },
 ]);

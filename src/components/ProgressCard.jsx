@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Typography, Divider, LinearProgress } from '@mui/material';
 import '@/styles/ProgressCard.css';
 
-function Rank() {
+function ProgressCard() {
   const [showAllTasks, setShowAllTasks] = useState(false);
 
   const dataTasks = [
@@ -104,4 +104,4 @@ function Rank() {
   );
 }
 
-export default Rank;
+export default ProgressCard;

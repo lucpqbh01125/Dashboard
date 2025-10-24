@@ -1,5 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { FaFileAlt, FaClock } from "react-icons/fa";
+import { GrScheduleNew } from "react-icons/gr";
+import "@/styles/users/dethi.css";
 
 function DeThi() {
   return (

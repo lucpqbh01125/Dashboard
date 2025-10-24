@@ -1,0 +1,38 @@
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    isolation: isolate;
+    position: absolute;
+    width: 1572px;
+    height: auto;
+    left: 348px;
+    top: 111px;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+    min-height: 500px; 
+    opacity: 1;
+    gap: 32px;
+    background-color: aqua;
+
+}
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 40px 0px 0px;
+    gap: 16px;
+    width: 396px;
+    height: 100%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    box-sizing: border-box;
+}

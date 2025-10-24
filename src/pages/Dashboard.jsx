@@ -1,11 +1,21 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import ProgressCard from "@/components/ProgressCard";
+import Ads from "@/components/Ads";
+import "@/styles/Dashboard.css";
 
 function Dashboard() {
 
   return (
-    <Box >
-      <Typography variant="h4">DashboardPage</Typography>
+    <Box className="dashboard-container">
+      <Box className="content-left">
+
+      </Box>
+
+      <Box className="content-right">
+        <ProgressCard />
+        <Ads />
+      </Box>
     </Box>
   );
 
