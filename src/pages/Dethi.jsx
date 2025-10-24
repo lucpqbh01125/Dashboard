@@ -41,7 +41,7 @@ const Dethi = () => {
                 </div>
               </div>
               <div className="start__item">
-                <button className="start__btn">Bắt đầu làm bài</button>
+                <button className="start__btn">Bắt đầu làm bài!</button>
               </div>
             </div>
           </div>
